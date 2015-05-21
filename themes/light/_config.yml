@@ -1,0 +1,59 @@
+menu:
+  Home: /
+  About: /about
+  Archive: /archives
+  RSS: /atom.xml
+
+widgets:
+- search
+- about_me
+- calendar
+- category
+- duoshuo_recent_comments
+- tagcloud
+- recent_posts
+- links
+
+highlightjs: monokai_sublime
+
+excerpt_link: Read More...
+
+twitter_id:
+facebook_id:
+github_id: haskio
+
+addthis:
+ # enable: false
+  pubid:
+  facebook: false
+  twitter: false
+  google: false
+  pinterest: false
+
+fancybox: true
+
+google_analytics:
+rss: /atom.xml
+
+links:
+- name: Life Blog
+  link: http://blog.wileam.com
+- name: popotang
+  link: http://popotang.com/
+- name: Jim-Liu's blog
+  link: http://jimliu.net/
+- name: icyleaf's blog
+  link: http://icyleaf.com/
+- name: twinsant
+  link: http://twinsant.com/
+
+duoshuo: fea-shine
+
+about_me:
+  title: ABOUT ME
+  avatar: /uploads/avatar.jpg
+  texts:
+  - <a href="/about" target="_BLANK">非想/a>
+  - Smile, breathe & go slowly. ^_^
+  - <br>
+
