@@ -77,4 +77,4 @@ theme: light
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: github
-  repository: git@github.com:haskio/haskio.github.io.git
+  repository: https://github.com/haskio/haskio.github.io.git
