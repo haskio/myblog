@@ -16,7 +16,9 @@ widgets:
 
 highlightjs: monokai_sublime
 
-excerpt_link: Read More...
+excerpt_link: 阅读...
+archive_yearly: false #按年存档
+
 
 twitter_id:
 facebook_id:
@@ -38,14 +40,7 @@ rss: /atom.xml
 links:
 - name: Life Blog
   link: http://blog.wileam.com
-- name: popotang
-  link: http://popotang.com/
-- name: Jim-Liu's blog
-  link: http://jimliu.net/
-- name: icyleaf's blog
-  link: http://icyleaf.com/
-- name: twinsant
-  link: http://twinsant.com/
+
 
 duoshuo: fea-shine
 
@@ -53,7 +48,7 @@ about_me:
   title: ABOUT ME
   avatar: /uploads/avatar.jpg
   texts:
-  - <a href="/about" target="_BLANK">非想/a>
-  - Smile, breathe & go slowly. ^_^
+  - <a href="/about" target="_BLANK">非想 </a>
+  - 无聊了，就写点东西。记记时间，录录岁月
   - <br>
 
