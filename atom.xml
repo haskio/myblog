@@ -5,7 +5,7 @@
   <subtitle><![CDATA[人生总有些目标]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="izen.tk//"/>
-  <updated>2015-07-27T08:39:16.000Z</updated>
+  <updated>2015-07-28T13:41:40.000Z</updated>
   <id>izen.tk//</id>
   
   <author>
@@ -14,6 +14,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[售前方案绘图工具介绍]]></title>
+    <link href="izen.tk/2015/07/28/processon/"/>
+    <id>izen.tk/2015/07/28/processon/</id>
+    <published>2015-07-28T12:49:21.000Z</published>
+    <updated>2015-07-28T13:41:40.000Z</updated>
+    <content type="html"><![CDATA[<p>在做方案或者写ppt过程中，不免会遇到需要画一些示意图或者架构图的情况，甚至在一些情况下，一图胜百字也是很正常的情况。<br>不过除非是一些标准化程度比较高的方案或者产品，否则画起来对于售前人员还是比较的。</p>
+<p>一般情况下，常规的图以visio为主，毕竟比较专业，各种流程图、架构图、拓扑图都不在话下。而且使用起来也比较方便，贴在word或者ppt中也不会变形，但是要注意不要直接把visio 源文件贴在文档里，一来使得文档体积大，二来容易被别人窃走。<br>不过这造成一些文档中的图找不到源文件（尤其是有交接的情况），相比接受别人方案的人对此会深有体会。 因此如果是自己保存，一定要留好源文件。至于别人，只能多要了。</p>
+<p>然后也有一些人会拿PPT来做一些图，并且会填上动画之类。这类图在制作的时候就比较麻烦，改起来会更麻烦。尤其如果贴来贴去，图形变形的几率很大。一般来说，不建议这么干。实在不行，把当前页接截个图，再ps下，或者贴出去，也是一个不错的办法。</p>
+<p>组织结构图或者分类示意图，建议用脑图工具来制作，比如mindmanger，或者xmind等，或者免费的用openmind，在功能上都差不多，外观上根据用的模板会有不同风格，比如mindmanger就有n多的模板，制作出来非常的精美，但是是商业软件，需要你懂的。</p>
+<p>当然以上这些都是常规软件，是用来做背景的。重点是要突出一个适合懒懒懒。。错了，是效率，敏捷，快速的专业售前人员的工具-processon。但是一上来就搞软文，显得太lower，太软了有失风范，也衬托不出来不要钱给吆喝的精髓。所以呢，就有了上面那些。</p>
+<p>下面进入私货阶段。。是言归正传。processon是一个在线作图平台，文件可以云存储什么的就不说了，以上说的几种图都有支持，当然需要在创建的时候选择类型，然后就可以进入不同的制作工具模式了。<br><img src="/img/processon0.png" alt=""><br>这么看是中规中矩的，但是他有一个在线share的平台，你可以搜索大家在做的已做的图，据说目前平台上已经有十来万张图了（不包括私密的）。<br>而且，还可以复制！！</p>
+<p><img src="/img/processon1.png" alt=""></p>
+<p>看到这里你还不明白么，简直是大杀器啊。哈哈哈。</p>
+<p>这么说吧，今天老板说我觉得这个方案里缺一个分层的拓扑图，你看看给加上。 然后你一看之前产品、方案里都没有过，这可怎么办？<br>来processon里搜索分层拓扑图，然后找一个你觉得顺眼。不，是觉得适合需求的。</p>
+<p>一收藏，再略微修改， 齐活完事。 什么事都耽误，晚上照样有时间喝啤酒撸串子。</p>
+<p>目前官方已经把图分类归档了很多类型，更加方便我们拿来。。向别人学习的机会。</p>
+<p><img src="/img/processon3.png" alt=""></p>
+<p>当然，如果你要非得找太冷门的图，比如说售前技能重要程度对比与分析，那不是说没有，是真没有。不过你可以在平台上做一个，然后供后人抄袭。。学习。</p>
+<p>另外还有一些小组、协作之类的功能，属于比较中规中矩，就不多说了，自行体验一把即可。</p>
+<p>如果你也对process感兴趣，要注册的话，可以用我的邀请链接，也能增加点私密文件数量。<br>我的：<br><a href="https://www.processon.com/i/524662300cf20f8f56d3e322" title="https://www.processon.com/i/524662300cf20f8f56d3e322" target="_blank" rel="external">https://www.processon.com/i/524662300cf20f8f56d3e322</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>在做方案或者写ppt过程中，不免会遇到需要画一些示意图或者架构图的情况，甚至在一些情况下，一图胜百字也是很正常的情况。<br>不过除非是一些标准化程度比较高的方案或者产品，否则画起来对于售前人员还是比较的。</p>
+<p>一般情况下，常规的图以visio为主，毕竟比较专业，]]>
+    </summary>
+    
+      <category term="processon" scheme="izen.tk/tags/processon/"/>
+    
+      <category term="visio" scheme="izen.tk/tags/visio/"/>
+    
+      <category term="方案制图" scheme="izen.tk/tags/%E6%96%B9%E6%A1%88%E5%88%B6%E5%9B%BE/"/>
+    
+      <category term="绘图" scheme="izen.tk/tags/%E7%BB%98%E5%9B%BE/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[最近一段时间的面试经历]]></title>
