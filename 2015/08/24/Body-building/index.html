@@ -1,0 +1,728 @@
+<!doctype html>
+<html class="theme-next use-motion theme-next-mist">
+<head>
+    
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.4"/>
+
+
+    <meta name="description" content="博思，随缘，六趣，中道" />
+
+
+
+  <meta name="keywords" content="产品规划,俱乐部管理,健身o2o,鬼工科技," />
+
+
+
+  <link rel="alternate" href="/atom.xml" title="博思" type="application/atom+xml" />
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/uploads/favicon.ico?v=0.4.4" />
+
+
+<meta name="description" content="最近了解了一下健身行业的o2o，不得不说现在哪里都在做互联网+的概念，其实只是一个普通的信息化也都往上套的事也不少，总归来说抄概念的多一些。
+本文仅以移动app的策略分析一些业务情况，如有不妥，纯属YY。
+需求健身可以涉及到的角色， 少里说就一个人——健身的用户，比如现在的手环、或者咕咚等app，定位在工具类。多的话，还会涉及到健身房（建设俱乐部）、健身教练、课程提供者。
+用户的需求按照常规的节奏">
+<meta property="og:type" content="article">
+<meta property="og:title" content="健身o2o一些想法和鬼工科技">
+<meta property="og:url" content="izen.tk/2015/08/24/Body-building/index.html">
+<meta property="og:site_name" content="博思">
+<meta property="og:description" content="最近了解了一下健身行业的o2o，不得不说现在哪里都在做互联网+的概念，其实只是一个普通的信息化也都往上套的事也不少，总归来说抄概念的多一些。
+本文仅以移动app的策略分析一些业务情况，如有不妥，纯属YY。
+需求健身可以涉及到的角色， 少里说就一个人——健身的用户，比如现在的手环、或者咕咚等app，定位在工具类。多的话，还会涉及到健身房（建设俱乐部）、健身教练、课程提供者。
+用户的需求按照常规的节奏">
+<meta property="og:image" content="izen.tk/img/fit-1.jpg">
+<meta property="og:image" content="izen.tk/img/fitapps.jpg">
+<meta property="og:updated_time" content="2015-08-24T16:16:44.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="健身o2o一些想法和鬼工科技">
+<meta name="twitter:description" content="最近了解了一下健身行业的o2o，不得不说现在哪里都在做互联网+的概念，其实只是一个普通的信息化也都往上套的事也不少，总归来说抄概念的多一些。
+本文仅以移动app的策略分析一些业务情况，如有不妥，纯属YY。
+需求健身可以涉及到的角色， 少里说就一个人——健身的用户，比如现在的手环、或者咕咚等app，定位在工具类。多的话，还会涉及到健身房（建设俱乐部）、健身教练、课程提供者。
+用户的需求按照常规的节奏">
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'hide'
+  };
+</script>
+
+    <title> 健身o2o一些想法和鬼工科技 // 博思 </title>
+</head>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+
+
+
+
+<div class="container one-column page-post-detail">
+    <div class="headband"></div>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+        <div class="header-inner"><h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/" class="brand" rel="start">
+      <span class="logo">
+        <i class="icon-logo"></i>
+      </span>
+      <span class="site-title">博思</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu menu-left">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon icon-home"></i> <br />
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            <i class="menu-item-icon icon-tags"></i> <br />
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            <i class="menu-item-icon icon-archives"></i> <br />
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            <i class="menu-item-icon icon-about"></i> <br />
+            关于
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+<form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'gY5bEqUhn3NqNzM3yxbW','2.0.0');
+</script>
+
+<div class="site-search-toggle"></div>
+    </div>
+  
+</nav>
+
+
+        </div>
+    </header>
+
+    <main id="main" class="main">
+        <div class="main-inner">
+            <div id="content" class="content">
+                
+
+  <div id="posts" class="posts-expand">
+    
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              健身o2o一些想法和鬼工科技
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-08-24T00:00:00+08:00" content="2015-08-24">
+            2015-08-24
+          </time>
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2015/08/24/Body-building/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2015/08/24/Body-building/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p>最近了解了一下健身行业的o2o，不得不说现在哪里都在做互联网+的概念，其实只是一个普通的信息化也都往上套的事也不少，总归来说抄概念的多一些。</p>
+<p>本文仅以移动app的策略分析一些业务情况，如有不妥，纯属YY。</p>
+<h2 id="需求">需求</h2><p>健身可以涉及到的角色， 少里说就一个人——健身的用户，比如现在的手环、或者咕咚等app，定位在工具类。<br>多的话，还会涉及到健身房（建设俱乐部）、健身教练、课程提供者。</p>
+<h3 id="用户的需求">用户的需求</h3><p>按照常规的节奏，用户的产生是：</p>
+<p>1、想要健身-&gt;2、学习如何健身-&gt;3.制订健身计划-&gt;4、执行健身计划-&gt; 5、检查成绩（日程，进度，成绩） -&gt; 6、秀成功（或者半途而废）</p>
+<p>其中</p>
+<p>1、2 是认识阶段，一般来讲目前的app在这块涉猎比较浅；</p>
+<p>3 是计划阶段，对用户来说是决定购买收费服务，还是跑步等。一般来说健身房在这个阶段只是做了一些商业广告，并没有告知用户更多有价值的内容。</p>
+<p>4、5、6是执行阶段，也是目前大多数关注的地方，一般来说是以运动数据为基础，做一些分析和呈现，再配合一些社交的功能。</p>
+<h3 id="健身房的需求">健身房的需求</h3><p>内容可以分为3类，因为对此了解不多，并且包含了一部分信息化的内容，就直接写需求，不做细分：</p>
+<p>1、日常类： 健身服务介绍、健身活动、日常活动、通知等</p>
+<p>2、管理类： 服务管理、会员管理、资产分配、会员管理等</p>
+<p>3、服务类： 预约、打卡（认证）、支付等</p>
+<p>4、综合类： 门户、数据分析、资产管理（可用性、生命周期）。</p>
+<p><img src="/img/fit-1.jpg" alt="fit"></p>
+<h2 id="分析">分析</h2><p>市面上的健身app已经很多，并且也有一些分析的文章。</p>
+<p><a href="http://lady.163.com/15/0107/17/AFCHLSR500264MHQ.html" title="9款高大上免费健身APP" target="_blank" rel="external">网易推荐，9款健身app</a></p>
+<p><a href="http://www.zhihu.com/question/21307457" title="有哪些好用的运动健身类 App" target="_blank" rel="external">知乎：有哪些好用的运动健身类 App</a></p>
+<p>可以看出来，现在的健身app有多少。<br><img src="/img/fitapps.jpg" alt="fit"></p>
+<p>在我看来，这些app都偏重中端，前面为什么健身，应该锻炼等阶段没有涉及，后期跟踪也只停留在数据呈现层，跟踪和分析也没有做。</p>
+<p>须知，健身首先不是简单的跑跑步、做几下哑铃就可以了，健身更像是学习，并不是千篇一律，而是不断变化。</p>
+<p>对线下端（健身教练）来说，更大的价值是针对个人体质、情况做个性化的健身方案，并且根据跟踪情况进行迭代。而不是目前的提供场地、设备、代课做演示等。</p>
+<p>比如说，之前很火的郑多燕，好多人其实做不下来，如果强忍着做，不但效果不好，可能还会照成身体的损伤。</p>
+<p>再次每个人需要锻炼的部位也是不一样的，而现在秀的一般也就是肱二，腹部八块等，这些其实对于健康来讲，帮助并不大。并且考虑到一些职业病群体，更是需要做到“因材施教”。</p>
+<p>所以跟踪过程很重要，健身是一个长期迭代的过程，不同的阶段需要锻炼的内容也不尽相同。可能前2个月锻炼基础的，后面就可以更难的，并不是直接加量就可以了。重复的锻炼一块肌肉，并不能达到更好的健身效果。</p>
+<h3 id="导引">导引</h3><p>如果用户已经有意愿想要健身，前期更适合做一个体质肌肉群的检测，类似于活法儿那样对体质的分类，很多人其实腰部、背部肌肉都萎缩的不行了，还天天跑步做哑铃，就是因为对自己没有多少了解，一味的跟风。 </p>
+<p>并且什么样的人应该怎么锻炼方面也可以有一些专题的文章进行推广，进行吸引新用户方面的运营。</p>
+<p>线上可以提供一些测量的方法，用户自行测量。</p>
+<p>线下健身房可以开一个检测服务，进行测量分析。</p>
+<h3 id="课程计划">课程计划</h3><p>“每天八分钟成型男”或者“30天减肥”都太标题党了，大家愿意相信还是因为有渴望，一副健康的身躯是每个人都想要的， 是不是一定要八块腹肌人鱼线，那倒是未必。</p>
+<p>所以这类课程，先不说用户能不能坚持。即使坚持了，大众的课程所带来的效果也未必多给力。更何况还未必跟你多适合。 课程里演示，一般都是最理想的情况。</p>
+<p>我们应该怎么办？ 定制的一定是适合的。大众的适合大众，个性化的话可以买付费服务，帮你量身定做。 </p>
+<p>当然也应该有免费的碎片化课程的，让用户自行挑选，形成健身计划。</p>
+<h3 id="过程">过程</h3><p>健身有点类似治病的过程，除了要坚持之外，还要根据情况进行调整，尤其后期调整更重要。肌肉有一定的劳累度的适应，因此在锻炼的过程中要配合一些辅助和修正。</p>
+<p>因此这里可以抓的功能点有单次锻炼质量，阶段锻炼的效果，计划的修正，。</p>
+<ul>
+<li><p>单此锻炼效果：每次锻炼动作是否到位，量是否达到，质量是否达标，以此来累计整个学期的进度和质量。</p>
+<p>  线上，可由系统来进行自动评测，比如通过时间/次数来计算是否达到了运动量，通过视频或者照片来分析动作标准。</p>
+<p>  增值服务可有专门的教练进行动态跟踪。</p>
+</li>
+<li><p>阶段锻炼效果：按照进度进行积累，并且在一定时间阶段内，进行一次效果总结和评测。</p>
+<p>  线上可做自动统计分析。</p>
+<p>  增值服务可由专门的教练进行评测，并且结合线下进行再一次的体制测评。</p>
+</li>
+<li><p>计划的修正： 根据上一阶段的课程的情况，来进行计划修正和调整，以进行晋级或者留级。</p>
+<p>  复测（类似于复诊）</p>
+</li>
+</ul>
+<h2 id="怎么做">怎么做</h2><p>以上内容只是列举，没什么技术含量。但是也可以看出来，用户的需求点分为两块：为什么要健身和怎么健身，前者是新用户加入的关注点，后者贯穿整个健身的过程。</p>
+<p>下手点：</p>
+<p><strong>企业测</strong></p>
+<p>1、可以先从健身房的信息化开始，建设独立的微信公众号、门户等，进行服务介绍和推广。</p>
+<p>2、服务老用户，建设资产管理、预约系统，可实时查询当前的设备的使用情况和人数等</p>
+<p><strong>用户：</strong></p>
+<p>1、目前的app更多是记录类，并没有日程规划、锻炼记事等工具方面的功能，因此可以作为用户侧的突破口</p>
+<p>2、课程方面大多以视频内容为主，或者是固定的锻炼模式（跟做），前者更多是视频网站封装了一个壳，后者也比较僵化。<br>因此可以将视频、或者锻炼模式切成更细的单元，按照职业、年龄等进行匹配和推广。</p>
+<p>3、社交，老实说目前不建议涉及这块，一来运动的社交并没有真正凸显，目前的市面上的app更多是走的微信朋友圈那样的方式，如果是大众化的社交模式，每天发个说说，上一个图之类的，其实意义不大，并且容易走向秀大腿，约之类的模式。 </p>
+<p>之前分析processon的社交，更多需要走以图会友，而现在更多是g+那种，导致现在的功能几近于废，搞的pm都想砍掉了。而健身这块也需要个性化，走一些以武会友的路子，比如搞一些用户的体验，健身报告之类的东西有意义，比如跑步100公里感言等。</p>
+<p><strong>其他</strong></p>
+<p>推广可以跟一些做健康、饮食、职场、医疗等挂钩，比如美食、或者寻医问药等。</p>
+<p>自我营销可以做一些周边、装备等。</p>
+<p>在课程介绍时，进行增值服务或者线下的介绍。</p>
+<h3 id="突破">突破</h3><p>1、关注高端用户<br>首先满足高端用户，即使只是10%或者更少，但是可以更快得建立品牌</p>
+<p>2、关注特殊和有刚需的<br>为了胸肌和人鱼线的用户有，但不是大众群体，如果只是服务这些人，无疑是在减小自己的目标群体。</p>
+<p>真正大众群体更多的为了健康。</p>
+<p>而有一部分特殊用户是职业病，比如腰椎、颈椎、鼠标手等，可以针对这类用户进行内容吸引和突破。</p>
+<p>3、以秀之类的事就算了，搞不好又变成约炮神器了。</p>
+<h2 id="架构设计">架构设计</h2><p>这个就比较简单了，按照层次来分的话，重点是底层和业务层部分</p>
+<h3 id="数据层">数据层</h3><p>要考虑到云平台+个性化平台的集合，对于用户入口是一个，对于企业可以有自有的信息化平台和系统。</p>
+<p>因此要考虑到分布式部署。</p>
+<h3 id="服务层">服务层</h3><p>除了做认证、权限、用户管理等，对于用户的健身数据的元数据也很重要，要考虑到用户在健身房的数据，如何跟健身房的设备进行互动，也要考虑到穿戴设备、无设备运动的数据管理。</p>
+<h3 id="业务层">业务层</h3><p>其实这块是重点，除了要打通线下线上之类，还需要完善一些之前并没有数据化的环节，因此应该重点关注工具类应用的实现。</p>
+<h2 id="收尾">收尾</h2><p>以上是简单的一些想法，总体来说，健身可能是一时的炒作，但是健康是一个永恒的话题。提高国民素质，并不是只能靠广场舞。</p>
+<p>而且有必要让更多的上班族，能够摆脱职业病，不说减少多少猝死吧，起码可以不被疾病困扰。</p>
+<p>关于标题中提到的鬼工科技，提起来都是泪。</p>
+<p>里面的龌蹉先不提了，以后再说。</p>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/产品规划/" rel="tag">#产品规划</a>
+          
+            <a href="/tags/俱乐部管理/" rel="tag">#俱乐部管理</a>
+          
+            <a href="/tags/健身o2o/" rel="tag">#健身o2o</a>
+          
+            <a href="/tags/鬼工科技/" rel="tag">#鬼工科技</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/08/14/shangzhan/" rel="next">《商战往事》读后感</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+            </div>
+
+            
+
+            
+              <div class="comments" id="comments">
+                
+                  <div class="ds-thread" data-thread-key="2015/08/24/Body-building/"
+                       data-title="健身o2o一些想法和鬼工科技" data-url="izen.tk/2015/08/24/Body-building/">
+                  </div>
+                
+              </div>
+            
+        </div>
+
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/images/default_avatar.jpg" alt="非非想" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">非非想</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">博思，随缘，六趣，中道</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-name">分类</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">21</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="menu-item-icon icon-feed"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#需求"><span class="nav-number">1.</span> <span class="nav-text">需求</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#用户的需求"><span class="nav-number">1.1.</span> <span class="nav-text">用户的需求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#健身房的需求"><span class="nav-number">1.2.</span> <span class="nav-text">健身房的需求</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分析"><span class="nav-number">2.</span> <span class="nav-text">分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#导引"><span class="nav-number">2.1.</span> <span class="nav-text">导引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#课程计划"><span class="nav-number">2.2.</span> <span class="nav-text">课程计划</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#过程"><span class="nav-number">2.3.</span> <span class="nav-text">过程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#怎么做"><span class="nav-number">3.</span> <span class="nav-text">怎么做</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#突破"><span class="nav-number">3.1.</span> <span class="nav-text">突破</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#架构设计"><span class="nav-number">4.</span> <span class="nav-text">架构设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据层"><span class="nav-number">4.1.</span> <span class="nav-text">数据层</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#服务层"><span class="nav-number">4.2.</span> <span class="nav-text">服务层</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#业务层"><span class="nav-number">4.3.</span> <span class="nav-text">业务层</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#收尾"><span class="nav-number">5.</span> <span class="nav-text">收尾</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="footer-inner">
+            <div class="copyright" >
+  
+  &copy; &nbsp;  2010 - 
+  <span itemprop="copyrightYear">2015</span>
+  <span class="with-love">
+    <i class="icon-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">非非想</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+  
+<script language="javascript" type="text/javascript" src="http://js.users.51.la/18190748.js"></script>
+<noscript><a href="http://www.51.la/?18190748" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/18190748.asp" style="border:none" /></a></noscript>
+</div>
+
+
+
+        </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+</div>
+
+<script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+    
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"fea-shine"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
+  	<script src="/js/ua-parser.min.js"></script>
+  	<script src="/js/hook-duoshuo.js"></script>
+  
+
+    
+  
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.4"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.4"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.4" id="motion.global"></script>
+
+
+
+  <script type="text/javascript" src="/js/search-toggle.js"></script>
+
+
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.4" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 0.4 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    var $tocContent = $('.post-toc-content');
+    if (isDesktop() && CONFIG.sidebar === 'post') {
+      if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+        displaySidebar();
+      }
+    }
+  });
+</script>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        if (CONFIG.sidebar === 'always') {
+            displaySidebar();
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+<!-- lazyload -->
+<script type="text/javascript" src="/js/lazyload.js"></script>
+<script type="text/javascript">
+    jQuery(function () {
+        jQuery("#posts img").lazyload({
+            placeholder: "/images/loading.gif",
+            effect: "fadeIn"
+        });
+    });
+</script>
+</body>
+</html>
