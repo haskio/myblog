@@ -12,7 +12,7 @@
   </entry>
   <entry>
     <title>产品经理懂技术1.客户端和服务器</title>
-    <url>/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%87%82%E6%8A%80%E6%9C%AF/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%87%82%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0-1/</url>
+    <url>/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%87%82%E6%8A%80%E6%9C%AF/pm2tech1/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在做系统规划或者部署的时候，总计会听到开发人员提到服务器，有时候还会提到应用服务器、数据库服务器等，这些服务器都是怎么划分？</p>
 <p>有些产品人员可能可能会疑惑，我们的系统不是使用浏览器，为什么还要需要服务器？</p>
 <p>现在就把这些事都讲一讲。</p>
@@ -50,8 +50,17 @@
       </categories>
   </entry>
   <entry>
+    <title>产品经理懂技术系列</title>
+    <url>/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%87%82%E6%8A%80%E6%9C%AF/pm2tech0/</url>
+    <content><![CDATA[<p>科普讨论一些产品经理日常会遇见的技术概念和知识</p>
+]]></content>
+      <categories>
+        <category>产品经理懂技术</category>
+      </categories>
+  </entry>
+  <entry>
     <title>产品经理懂技术2.同步、异步</title>
-    <url>/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%87%82%E6%8A%80%E6%9C%AF/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%87%82%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0-2/</url>
+    <url>/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%87%82%E6%8A%80%E6%9C%AF/pm2tech2/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>异步&#x2F;同步，是处理模式的一种机制，一般用于函数、接口或者业务处理。</p>
 <span id="more"></span>
 
