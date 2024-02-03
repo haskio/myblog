@@ -2,37 +2,22 @@
 <search>
   <entry>
     <title>Hello World</title>
-    <url>/%E6%A0%87%E7%AD%BE1/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+    <url>/%E5%85%B6%E4%BB%96/hello-world/</url>
+    <content><![CDATA[<p>继续使用hexo记录文章</p>
 <span id="more"></span>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
       <categories>
-        <category>标签1</category>
+        <category>其他</category>
       </categories>
   </entry>
   <entry>
-    <title>post title with whitespace</title>
-    <url>/uncategorized/post-title-with-whitespace/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>产品经理懂技术第一章-1.客户端和服务器</title>
+    <title>产品经理懂技术1.客户端和服务器</title>
     <url>/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%87%82%E6%8A%80%E6%9C%AF/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%87%82%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0-1/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在做系统规划或者部署的时候，总计会听到开发人员提到服务器，有时候还会提到应用服务器、数据库服务器等，这些服务器都是怎么划分？</p>
 <p>有些产品人员可能可能会疑惑，我们的系统不是使用浏览器，为什么还要需要服务器？</p>
 <p>现在就把这些事都讲一讲。</p>
+<span id="more"></span>
+
 <h2 id="为什么要有服务器"><a href="#为什么要有服务器" class="headerlink" title="为什么要有服务器"></a>为什么要有服务器</h2><p>客户端这个词因为在不同场景都会使用，所以会一些串场的情况。</p>
 <ul>
 <li>在架构中出现</li>
@@ -65,19 +50,11 @@
       </categories>
   </entry>
   <entry>
-    <title>产品经理懂技术第一章-0.前言</title>
-    <url>/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%87%82%E6%8A%80%E6%9C%AF/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%87%82%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0-0/</url>
-    <content><![CDATA[<p>本章简介：</p>
-<p>用于介绍一些IT领域常见的名词和概念。</p>
-]]></content>
-      <categories>
-        <category>产品经理懂技术</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>产品经理懂技术第一章-2.同步、异步</title>
+    <title>产品经理懂技术2.同步、异步</title>
     <url>/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%87%82%E6%8A%80%E6%9C%AF/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E6%87%82%E6%8A%80%E6%9C%AF%E7%AC%AC%E4%B8%80%E7%AB%A0-2/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>异步&#x2F;同步，是处理模式的一种机制，一般用于函数、接口或者业务处理。</p>
+<span id="more"></span>
+
 <h4 id="同步模式"><a href="#同步模式" class="headerlink" title="同步模式"></a>同步模式</h4><p>假设有a函数和b函数， a函数需要调用b函数。 在a调用b函数后，但是b函数还没有返回结果之前，a函数必须一直在等待，必须等b处理完结果后，a才会继续往下执行。</p>
 <p>举个例子：a去银行营业厅办事，等轮到a去窗口了，a说我要办某某业务，然后里面的营业员就开始办理，然后a要一直在窗口等着，直到里面营业员办完，才可以离开。</p>
 <p>a在窗口等待，走不了，这种模式就叫同步模式，这种状态，被称为被阻塞，因为a的行动被阻在这个节点了。</p>
